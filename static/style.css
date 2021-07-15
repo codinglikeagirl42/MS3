@@ -1,0 +1,139 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px;
+    font-size: 3vw;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+form {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+form.menu {
+    border: 1px solid black;
+    border-radius: 4%;
+}
+
+label {
+    display: block;
+    margin: 5px;
+    font-size: larger;
+}
+
+input.menu {
+    margin: 5px;
+    font-size: large;
+    max-width: 50%;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    font-size: larger;
+    border-radius: 100%;
+    margin: 4px;
+}
+
+button.menu {
+    background-color: orange;
+    border-radius: 4%;
+    color: black;
+    margin: 5px;
+}
+
+.centered {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+    margin: 5px;
+}
+
+table {
+    display: inline-table;
+    min-width: 50%;
+    table-layout: fixed;
+}
+
+th, td {
+    min-width: 55px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+tr {
+    line-height: 2.5vw;
+}
+
+.empty {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.oops {
+    background-color: red;
+    text-align: center;
+}
+
+.miss {
+    background-color: white;
+}
+
+.form-section {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.flag {
+    background-color: goldenrod;
+    text-align: center;
+}
+
+.win {
+    font-size: 4vw;
+    color: purple;
+    text-align: center;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.lose {
+    font-size: 4vw;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.mistake {
+    font-size: 3vw;
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.instructions {
+    background-color: beige;
+    height: 400px;
+    margin: 10px;
+    border: 1pt solid gray;
+    border-radius: 4%;
+}
