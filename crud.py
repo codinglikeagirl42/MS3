@@ -20,7 +20,13 @@ def execute_query(query_string):
     return results
 
 def record_mines(locations):
-    pass
+    counter = 1
+    for location in locations:
+        sql_query = f"INSERT INTO mines (coordinates) VALUES ('{location}')"
+        execute_query(sql_query)
+        sql_query = f"UPDATE board SET mine_id = {counter} WHERE coordinates = '{location}'"
+        execute_query(sql_query)
+        counter += 1
 
 def count_mines():
     pass
