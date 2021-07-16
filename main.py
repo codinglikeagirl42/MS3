@@ -27,8 +27,14 @@ def play():
         guess = request.form['guess']
         if guess == 'New Game' or guess[0] not in string.ascii_uppercase[0:10]:
             return redirect('/')  
-        
+        #Checks if we checked the possible mine box
+        flagged = request.form.get('flagged')
 
+        #Did we step on a mine?
+        safe_guess = check_guess(guess, flagged)
+        if not safe_guess:
+            session['hit_mine'] = True
+   
     else:
         if session['num_mines'] <= 0:
             return redirect('/')
