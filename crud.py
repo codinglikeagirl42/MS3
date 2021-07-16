@@ -29,7 +29,11 @@ def record_mines(locations):
         counter += 1
 
 def count_mines():
-    pass
+    sql_query = "SELECT coordinates FROM board"
+    cells = execute_query(sql_query)
+    for cell in cells:
+        check_surroundings(cell[0])
+
 
 def check_surroundings(location):
     count = 0
