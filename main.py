@@ -41,6 +41,6 @@ def play():
 
     page_title = f"Mines Remaining: {session['num_mines']}"
     return render_template("mines.html", page_title = page_title)
-
+ 
 if __name__ == '__main__':
     app.run()

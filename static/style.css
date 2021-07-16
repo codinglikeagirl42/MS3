@@ -34,8 +34,9 @@ label {
 
 input.menu {
     margin: 5px;
-    font-size: large;
-    max-width: 50%;
+    font-size: small;
+    min-width: 25%;
+    align-items: center;
 }
 
 button {

@@ -4,6 +4,15 @@
 <header class="centered">
     <!-- Add header content here. -->
     <button type="submit" form="game-board" class="menu" name="guess" value="New Game">New Game</button>
+    {% if session['hit_mine'] %}
+        <p class="lose">KA-BOOM!!!</p>
+    {% elif session['num_mines'] == 0 and session['mines']|length == 0 %}
+        <p class="win">YOU WIN!!!!!</p>
+    {% elif session['num_mines'] == 0 %}
+        <p class="mistake">Oops! Some of your flags aren't mines.</p>
+    {% endif %}
+
+
 </header>
 <section class="centered">
     <form id="game-board" action="/play" method="POST">
